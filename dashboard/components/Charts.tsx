@@ -26,11 +26,11 @@ const tooltipStyle = {
     border: "1px solid #e5e8f0",
     borderRadius: 10,
     color: "#0f172a",
-    boxShadow: "0 8px 24px rgba(15,23,42,0.10)",
+    boxShadow: "none",
     fontSize: 13,
 };
 const tooltipText = { color: "#0f172a" };
-const cursorFill = { fill: "rgba(79,70,229,0.05)" };
+const cursorFill = { fill: "rgba(28,25,23,0.04)" };
 
 const money = (n: number) =>
     n >= 1_000_000 ? `£${(n / 1_000_000).toFixed(1)}M` : n >= 1000 ? `£${(n / 1000).toFixed(0)}k` : `£${n.toFixed(0)}`;
@@ -123,8 +123,8 @@ export function ShareComparison({ segments }: { segments: SegmentStats[] }) {
                         wrapperStyle={{ fontSize: 13 }}
                         formatter={(v) => (v === "customers" ? "Share of customers" : "Share of revenue")}
                     />
-                    <Bar dataKey="customers" fill="#cbd5e1" radius={[6, 6, 0, 0]} maxBarSize={36} />
-                    <Bar dataKey="revenue" fill="#4f46e5" radius={[6, 6, 0, 0]} maxBarSize={36} />
+                    <Bar dataKey="customers" fill="#d6d3d1" radius={[6, 6, 0, 0]} maxBarSize={36} />
+                    <Bar dataKey="revenue" fill="#1c1917" radius={[6, 6, 0, 0]} maxBarSize={36} />
                 </BarChart>
             </ResponsiveContainer>
         </div>
