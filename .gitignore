@@ -1,0 +1,13 @@
+# Raw / generated data (regenerate via the notebook)
+OnlineRetail.csv
+OnlineRetail.xlsx
+ecommerce_data.db
+
+# Notebook / Python
+.ipynb_checkpoints/
+__pycache__/
+
+# Dashboard
+dashboard/node_modules/
+dashboard/.next/
+dashboard/.vercel/
